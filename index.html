@@ -9,14 +9,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navegação -->
-    <nav class="navbar navbar-expand navbar-light border">
-        <a class="navbar-brand" href="#" id="navbar-site-title" >Painel</a>
-        <form class="form-inline" id="navbar-search-form">
-            <input type="text" class="form-control search-field" placeholder="Pesquisar" id="navbar-search-field">
-        </form>
-        
-    </nav>
+    <div class="d-flex" id="wrapper">
+        <!-- side bdar -->
+        <div id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <span>Painel ADMIN</span>
+                <div class="list-group list-group-flush border-right">
+                    <a href="#" class="list-group-item list-group-item-action">Início</a>
+                    <a href="#" class="list-group-item list-group-item-action">Usuários</a>
+                    <a href="#" class="list-group-item list-group-item-action">Categorias</a>
+                    <a href="#" class="list-group-item list-group-item-action">Produtos</a>
+                    <a href="#" class="list-group-item list-group-item-action">Relatórios</a>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+        <div id="page-content-wrapper">
+            <!-- Navegação -->
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar-custom">
+                <a class="navbar-brand" href="#" id="navbar-site-title" >Painel</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsed" 
+                aria-controls="navbar-collapsed" aria-expanded="false" aria-label="Exibe toda navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-collapsed">
+                    <form class="form-inline" id="navbar-search-form">
+                        <input type="text" class="form-control search-field" placeholder="Pesquisar" id="navbar-search-field">
+                    </form>
+                    <div id="navbar-profile" class="ml-auto">
+                        <img src="https://avatars3.githubusercontent.com/u/4422492?s=400&u=7cef153dbaf3f4a23bd05066a5449c6e0614e8f2&v=4" alt="Profile">
+                        <span>Salumão Barbosa</span>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fim Navegação -->
+        </div>
+        <!-- Fim Content -->
+    </div>
+    <!-- Fim d-flex wrapper -->
+
 
     <!-- SCRIPTS - Dependência do bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
