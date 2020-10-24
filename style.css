@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
 /* 
     font-family: 'Nunito', sans-serif;
-
     font-family: 'Nunito Sans', sans-serif; 
 */
+body{
+    background: #eff1f4ff;
+}
+
 #navbar-site-title{
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
@@ -17,7 +20,7 @@
     border-radius: 9px;
     border-width: 1px;
     border-color: #bacad6ff;
-    box-shadow: 0px 1px 2px rgba(164,164,164,0.5);
+    box-shadow: 0px 1px 2px rgba(164,164,164,0.2);
 }
 .search-field::placeholder{
     font-family: 'Nunito', sans-serif;
@@ -31,4 +34,20 @@
 
 #navbar-search-field{
     width: 100%;
+}
+
+#navbar-profile img{
+    border-radius: 50%;
+    width: 12%;
+}
+
+#navbar-profile span{
+    font-family: 'Nunito', sans-serif;
+    color: #262d37ff;
+    padding-left: 4%;
+}
+
+#navbar-custom{
+    background-color: #fff;
+    box-shadow: 8px 2px 6px rgba(164,164,164,0.3);
 }
